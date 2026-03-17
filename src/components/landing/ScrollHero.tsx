@@ -341,7 +341,7 @@ function PhoneImage({
 function MobileFeatureText({
   scrollProgress,
 }: {
-  scrollProgress: ReturnType<typeof useTransform>;
+  scrollProgress: MotionValue<number>;
 }) {
   return (
     <div className="relative min-h-[100px]">
