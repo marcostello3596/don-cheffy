@@ -14,21 +14,19 @@ const AboutSection = () => (
           De los creadores
         </span>
         <h2 className="font-display text-2xl sm:text-4xl font-bold text-foreground mb-6 leading-tight">
-          Creamos Don Cheffy porque estábamos cansados de improvisar en la cocina
+          Creamos Don Cheffy porque ir al súper no debería ser tan complicado
         </h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            Todo empezó con una pregunta que todos nos hacemos a diario: <em>&ldquo;¿Qué cocino hoy?&rdquo;</em>. 
-            Entre la falta de ideas, las listas de compras incompletas y los ingredientes olvidados, 
-            cocinar se sentía más como un problema que como un placer.
+            Listas a medias, ingredientes olvidados, viajes extra al súper... nos pasaba cada semana.
+            Nos dimos cuenta de que el problema no era cocinar, sino <em>planificar y comprar</em>.
           </p>
           <p>
-            Con Don Cheffy queremos que cocinar vuelva a ser simple y divertido. La inteligencia artificial 
-            se encarga de lo aburrido — pensar qué hacer, calcular ingredientes, armar la lista del súper — 
-            para que tú solo te preocupes por disfrutar.
+            Don Cheffy usa inteligencia artificial para resolver eso: genera recetas, arma tu lista de compras 
+            automáticamente y organiza todo para que vayas al súper una vez y con todo lo que necesitas.
           </p>
           <p className="text-foreground font-medium">
-            🍳 Nuestro objetivo: que nunca más llegues al súper sin saber qué comprar.
+            🎯 Nuestro objetivo: que cada ida al súper sea rápida, completa y sin estrés.
           </p>
         </div>
       </motion.div>

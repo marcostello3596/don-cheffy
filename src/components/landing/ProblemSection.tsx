@@ -11,11 +11,11 @@ const ProblemSection = () => (
       >
         <span className="text-4xl mb-6 block">😩</span>
         <h2 className="font-display text-3xl sm:text-5xl font-bold text-foreground mb-6">
-          Para los que odian pensar qué cocinar
+          Para los que odian improvisar en el súper
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Todos los días la misma historia: &ldquo;¿Qué hago de comer?&rdquo;, la lista del súper incompleta, 
-          ingredientes que se te olvidan, recetas que nunca repites. <strong className="text-foreground">Don Cheffy termina con eso.</strong>
+          Ir al súper sin lista, olvidar ingredientes, comprar de más, no saber qué hacer de comer... 
+          suena familiar. <strong className="text-foreground">Don Cheffy automatiza todo eso para que tu semana fluya.</strong>
         </p>
       </motion.div>
     </div>

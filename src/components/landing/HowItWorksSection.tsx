@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", emoji: "💬", title: "Describe tu receta", desc: "Cuéntale a la IA qué quieres comer o qué ingredientes tienes disponibles." },
-  { num: "02", emoji: "✨", title: "La IA la genera", desc: "En segundos, Don Cheffy crea una receta completa con ingredientes y pasos detallados." },
-  { num: "03", emoji: "🛍️", title: "Lista de compras lista", desc: "Los ingredientes se agregan automáticamente a tu lista de compras organizada." },
+  { num: "01", emoji: "💬", title: "Genera tu receta", desc: "Dile a la IA qué quieres cocinar o qué ingredientes tienes. En segundos tienes la receta." },
+  { num: "02", emoji: "🛒", title: "Lista automática", desc: "Los ingredientes se agregan solos a tu lista de compras, organizados por categoría." },
+  { num: "03", emoji: "✅", title: "Compra sin estrés", desc: "Ve al súper con todo listo. Tacha los productos mientras compras y no olvides nada." },
 ];
 
 const HowItWorksSection = () => (

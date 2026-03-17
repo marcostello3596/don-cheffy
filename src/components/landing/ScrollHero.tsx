@@ -160,13 +160,13 @@ const ScrollHero = () => {
               </div>
 
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-[1.1] tracking-tight mb-6">
-                Cocina sin complicaciones.{" "}
-                <span className="text-primary">Don Cheffy</span> lo resuelve.
+                Tu súper resuelto.{" "}
+                <span className="text-primary">Don Cheffy</span> lo organiza.
               </h1>
 
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-                La IA genera recetas personalizadas y arma tu lista de compras
-                automáticamente. Deja de improvisar y empieza a disfrutar.
+                Genera recetas con IA y tu lista de compras se arma sola.
+                Deja de improvisar en el súper y ahorra tiempo cada semana.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
