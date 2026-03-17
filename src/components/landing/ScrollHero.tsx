@@ -1,4 +1,5 @@
-import { useRef, useMemo } from "react";
+import { useRef } from "react";
+import type { MotionValue } from "framer-motion";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
