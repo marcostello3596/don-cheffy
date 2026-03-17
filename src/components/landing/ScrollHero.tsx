@@ -229,9 +229,11 @@ const ScrollHero = () => {
             </div>
 
             {/* Mobile: phone centered, text below */}
-            <div className="lg:hidden flex flex-col items-center gap-6">
-              <PhoneWithScroll imageIndex={imageIndex} />
-              <div className="relative min-h-[120px] w-full text-center">
+            <div className="lg:hidden flex flex-col items-center gap-4 pt-8">
+              <div className="scale-[0.85]">
+                <PhoneWithScroll imageIndex={imageIndex} />
+              </div>
+              <div className="relative min-h-[140px] w-full text-center">
                 <MobileFeatureText scrollProgress={scrollYProgress} />
               </div>
             </div>
