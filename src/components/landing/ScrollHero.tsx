@@ -9,12 +9,12 @@ import homeScreenImg from "@/assets/home_screen.png";
 
 /* ─── Bubble data: positions as % from center of viewport ─── */
 const bubbles = [
-  { text: "¿Qué cocino hoy?", emoji: "🤔", left: "10%", top: "8%" },
-  { text: "¿Qué me falta en el súper?", emoji: "🛒", right: "8%", top: "6%" },
-  { text: "¿Qué desayuno?", emoji: "🥞", left: "5%", top: "22%" },
-  { text: "¿Algo rápido para cenar?", emoji: "⏱️", right: "6%", top: "20%" },
-  { text: "¿Qué hago con lo que tengo?", emoji: "🥕", left: "18%", top: "2%" },
-  { text: "No sé qué comprar", emoji: "😩", right: "16%", top: "3%" },
+  { text: "¿Qué cocino hoy?", emoji: "🤔", left: "4%", top: "18%" },
+  { text: "¿Qué me falta en el súper?", emoji: "🛒", right: "4%", top: "15%" },
+  { text: "¿Qué desayuno?", emoji: "🥞", left: "3%", top: "48%" },
+  { text: "¿Algo rápido para cenar?", emoji: "⏱️", right: "3%", top: "52%" },
+  { text: "¿Qué hago con lo que tengo?", emoji: "🥕", left: "6%", top: "78%" },
+  { text: "No sé qué comprar", emoji: "😩", right: "6%", top: "80%" },
 ];
 
 const features = [
