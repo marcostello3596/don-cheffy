@@ -321,7 +321,7 @@ function PhoneImage({
   src: string;
   alt: string;
   index: number;
-  imageIndex: ReturnType<typeof useTransform>;
+  imageIndex: MotionValue<number>;
 }) {
   const opacity = useTransform(imageIndex, (v: number) =>
     v === index ? 1 : 0
