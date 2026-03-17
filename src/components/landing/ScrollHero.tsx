@@ -58,7 +58,7 @@ function Bubble({
   x: number;
   y: number;
   index: number;
-  scrollProgress: ReturnType<typeof useTransform>;
+  scrollProgress: MotionValue<number>;
 }) {
   // Bubbles converge from 0→0.15 of total scroll
   const bx = useTransform(scrollProgress, [0, 0.12], [x, 0]);
