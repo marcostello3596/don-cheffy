@@ -1,25 +1,30 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const ProblemSection = () => (
-  <section className="py-24 sm:py-32 bg-secondary/50">
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-      >
-        <span className="text-4xl mb-6 block">😩</span>
-        <h2 className="font-display text-3xl sm:text-5xl font-bold text-foreground mb-6">
-          Para los que odian improvisar en el súper
-        </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Ir al súper sin lista, olvidar ingredientes, comprar de más, no saber qué hacer de comer... 
-          suena familiar. <strong className="text-foreground">Don Cheffy automatiza todo eso para que tu semana fluya.</strong>
-        </p>
-      </motion.div>
-    </div>
-  </section>
-);
+const ProblemSection = () => {
+  const { lang, t } = useLanguage();
+
+  return (
+    <section className="py-24 sm:py-32 bg-secondary/50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="text-4xl mb-6 block">😩</span>
+          <h2 className="font-display text-3xl sm:text-5xl font-bold text-foreground mb-6">
+            {t.problem.title[lang]}
+          </h2>
+          <p
+            className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: t.problem.description[lang] }}
+          />
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
 export default ProblemSection;

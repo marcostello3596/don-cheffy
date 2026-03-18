@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { lang, toggleLang, t } = useLanguage();
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -20,11 +22,18 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex items-center gap-8">
-          <button onClick={() => scrollTo("features")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">Funciones</button>
-          <button onClick={() => scrollTo("how-it-works")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">Cómo funciona</button>
-          <button onClick={() => scrollTo("about")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">Nosotros</button>
+          <button onClick={() => scrollTo("features")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t.nav.features[lang]}</button>
+          <button onClick={() => scrollTo("how-it-works")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t.nav.howItWorks[lang]}</button>
+          <button onClick={() => scrollTo("about")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t.nav.about[lang]}</button>
+          <button
+            onClick={toggleLang}
+            className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Globe className="h-4 w-4" />
+            {lang === "en" ? "ES" : "EN"}
+          </button>
           <Button onClick={() => scrollTo("waitlist")} size="sm" className="rounded-full px-6">
-            Únete
+            {t.nav.join[lang]}
           </Button>
         </div>
 
@@ -42,10 +51,13 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-background border-b border-border"
           >
             <div className="flex flex-col gap-4 px-6 py-6">
-              <button onClick={() => scrollTo("features")} className="text-left text-muted-foreground hover:text-foreground">Funciones</button>
-              <button onClick={() => scrollTo("how-it-works")} className="text-left text-muted-foreground hover:text-foreground">Cómo funciona</button>
-              <button onClick={() => scrollTo("about")} className="text-left text-muted-foreground hover:text-foreground">Nosotros</button>
-              <Button onClick={() => scrollTo("waitlist")} className="rounded-full w-full">Únete</Button>
+              <button onClick={() => scrollTo("features")} className="text-left text-muted-foreground hover:text-foreground">{t.nav.features[lang]}</button>
+              <button onClick={() => scrollTo("how-it-works")} className="text-left text-muted-foreground hover:text-foreground">{t.nav.howItWorks[lang]}</button>
+              <button onClick={() => scrollTo("about")} className="text-left text-muted-foreground hover:text-foreground">{t.nav.about[lang]}</button>
+              <button onClick={toggleLang} className="text-left text-muted-foreground hover:text-foreground flex items-center gap-1.5">
+                <Globe className="h-4 w-4" /> {lang === "en" ? "Español" : "English"}
+              </button>
+              <Button onClick={() => scrollTo("waitlist")} className="rounded-full w-full">{t.nav.join[lang]}</Button>
             </div>
           </motion.div>
         )}
