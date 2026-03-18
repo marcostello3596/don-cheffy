@@ -139,7 +139,7 @@ const ScrollHero = () => {
   };
 
   return (
-    <section ref={containerRef} id="hero" className="relative" style={{ height: "400vh" }}>
+    <section ref={containerRef} id="hero" className="relative" style={{ height: "500vh" }}>
       <div
         className="sticky top-0 h-screen overflow-hidden"
         style={{ background: "var(--hero-gradient)" }}
