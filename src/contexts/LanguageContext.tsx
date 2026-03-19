@@ -86,14 +86,12 @@ const translations = {
       es: "🎯 Nuestro objetivo: que cada ida al súper sea rápida, completa y sin estrés.",
     },
   },
-  waitlist: {
-    title: { en: "Stop improvising at the store", es: "Deja de improvisar en el súper" },
-    subtitle: { en: "Be one of the first to try Don Cheffy. Sign up and we'll let you know when it's ready.", es: "Sé de los primeros en probar Don Cheffy. Regístrate y te avisamos cuando esté listo." },
-    placeholder: { en: "you@email.com", es: "tu@email.com" },
-    button: { en: "Join 🚀", es: "Unirme 🚀" },
-    sending: { en: "Sending...", es: "Enviando..." },
-    success: { en: "You've joined the waitlist! 🎉", es: "¡Te has unido a la lista de espera! 🎉" },
-    spam: { en: "No spam. We'll only notify you when we launch. 🤞", es: "Sin spam. Solo te avisaremos cuando lancemos. 🤞" },
+  download: {
+    title: { en: "Download Don Cheffy now", es: "Descarga Don Cheffy ahora" },
+    subtitle: { en: "Scan the QR code with your phone to get the app.", es: "Escanea el código QR con tu teléfono para obtener la app." },
+    appStore: { en: "App Store", es: "App Store" },
+    playStore: { en: "Google Play", es: "Google Play" },
+    scanLabel: { en: "Scan to download", es: "Escanea para descargar" },
   },
   footer: {
     rights: { en: "All rights reserved.", es: "Todos los derechos reservados." },
