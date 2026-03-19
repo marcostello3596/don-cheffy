@@ -13,7 +13,7 @@ const Index = () => (
     <ProblemSection />
     <HowItWorksSection />
     <AboutSection />
-    <WaitlistSection />
+    <DownloadSection />
     <Footer />
   </div>
 );

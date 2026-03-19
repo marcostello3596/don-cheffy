@@ -140,7 +140,7 @@ const ScrollHero = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button onClick={() => scrollTo("waitlist")} size="lg" className="rounded-full px-10 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-shadow">
+                <Button onClick={() => scrollTo("download")} size="lg" className="rounded-full px-10 py-6 text-base font-semibold shadow-xl hover:shadow-2xl transition-shadow">
                   {t.hero.cta[lang]}
                 </Button>
                 <Button onClick={() => scrollTo("how-it-works")} variant="ghost" size="lg" className="rounded-full px-8 py-6 text-base gap-2">

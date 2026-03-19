@@ -57,7 +57,7 @@ const Navbar = () => {
               <button onClick={toggleLang} className="text-left text-muted-foreground hover:text-foreground flex items-center gap-1.5">
                 <Globe className="h-4 w-4" /> {lang === "en" ? "Español" : "English"}
               </button>
-              <Button onClick={() => scrollTo("waitlist")} className="rounded-full w-full">{t.nav.join[lang]}</Button>
+              <Button onClick={() => scrollTo("download")} className="rounded-full w-full">{t.nav.join[lang]}</Button>
             </div>
           </motion.div>
         )}
