@@ -7,7 +7,7 @@ const translations = {
     features: { en: "Features", es: "Funciones" },
     howItWorks: { en: "How it works", es: "Cómo funciona" },
     about: { en: "About us", es: "Nosotros" },
-    join: { en: "Join", es: "Únete" },
+    join: { en: "Download", es: "Descargar" },
   },
   hero: {
     badge: { en: "🚀 Available now", es: "🚀 Disponible ahora" },
