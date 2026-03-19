@@ -10,14 +10,14 @@ const translations = {
     join: { en: "Join", es: "Únete" },
   },
   hero: {
-    badge: { en: "🚀 Coming soon", es: "🚀 Próximamente disponible" },
+    badge: { en: "🚀 Available now", es: "🚀 Disponible ahora" },
     title1: { en: "Grocery shopping solved. ", es: "Tu súper resuelto. " },
     title2: { en: " handles it.", es: " lo organiza." },
     subtitle: {
       en: "Generate recipes with AI and your shopping list builds itself. Stop improvising at the store and save time every week.",
       es: "Genera recetas con IA y tu lista de compras se arma sola. Deja de improvisar en el súper y ahorra tiempo cada semana.",
     },
-    cta: { en: "Join the waitlist", es: "Únete a la lista de espera" },
+    cta: { en: "Download the app", es: "Descarga la app" },
     discover: { en: "Discover more", es: "Descubre más" },
   },
   bubbles: [
