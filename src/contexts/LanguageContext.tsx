@@ -30,7 +30,7 @@ const translations = {
   ],
   features: [
     {
-      title: { en: "Generate recipes and build your list instantly", es: "Genera recetas y arma tu lista al instante" },
+      title: { en: "Generate recipes with AI and build your list instantly", es: "Genera recetas con IA y arma tu lista al instante" },
       description: {
         en: "Tell the AI what you want to cook and get the full recipe. Ingredients are automatically added to your shopping list — no thinking, no forgetting.",
         es: "Dile a la IA qué quieres cocinar y genera la receta completa. Los ingredientes se agregan automáticamente a tu lista de compras — sin pensar, sin olvidar nada.",
