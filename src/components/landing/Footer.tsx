@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-1">
-            <img src={logoImg} alt="ReciList" className="h-7 w-auto" />
+            <img src={logoImg} alt="ReciList" className="h-20 w-auto" />
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} ReciList. {t.footer.rights[lang]}

@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-1">
-          <img src={logoImg} alt="ReciList" className="h-8 w-auto" />
+          <img src={logoImg} alt="ReciList" className="h-28 w-auto" />
         </button>
 
         <div className="hidden md:flex items-center gap-8">
