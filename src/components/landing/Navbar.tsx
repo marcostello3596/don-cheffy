@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
-          <span className="text-2xl">👨‍🍳</span>
-          <span className="font-display text-xl font-bold text-foreground">Don Cheffy</span>
+          <ReciListLogo size={28} />
+          <span className="font-display text-xl font-bold text-foreground">ReciList</span>
         </button>
 
         <div className="hidden md:flex items-center gap-8">

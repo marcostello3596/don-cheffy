@@ -12,7 +12,7 @@ const Footer = () => {
             <span className="font-display text-lg font-bold text-foreground">ReciList</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Don Cheffy. {t.footer.rights[lang]}
+            © {new Date().getFullYear()} ReciList. {t.footer.rights[lang]}
           </p>
         </div>
       </div>

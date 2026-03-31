@@ -51,7 +51,7 @@ const HeroSection = () => {
 
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold text-foreground leading-[1.1] tracking-tight mb-6">
             Cocina sin complicaciones.{" "}
-            <span className="text-primary">Don Cheffy</span>{" "}
+            <span className="text-primary">ReciList</span>{" "}
             lo resuelve.
           </h1>
 

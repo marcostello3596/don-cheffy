@@ -57,8 +57,8 @@ const translations = {
   problem: {
     title: { en: "For those who hate improvising at the store", es: "Para los que odian improvisar en el súper" },
     description: {
-      en: 'Going to the store without a list, forgetting ingredients, buying too much, not knowing what to cook... sound familiar? <strong class="text-foreground">Don Cheffy automates all that so your week flows smoothly.</strong>',
-      es: 'Ir al súper sin lista, olvidar ingredientes, comprar de más, no saber qué hacer de comer... suena familiar. <strong class="text-foreground">Don Cheffy automatiza todo eso para que tu semana fluya.</strong>',
+      en: 'Going to the store without a list, forgetting ingredients, buying too much, not knowing what to cook... sound familiar? <strong class="text-foreground">ReciList automates all that so your week flows smoothly.</strong>',
+      es: 'Ir al súper sin lista, olvidar ingredientes, comprar de más, no saber qué hacer de comer... suena familiar. <strong class="text-foreground">ReciList automatiza todo eso para que tu semana fluya.</strong>',
     },
   },
   howItWorks: {
@@ -72,14 +72,14 @@ const translations = {
   },
   about: {
     tag: { en: "From the creators", es: "De los creadores" },
-    title: { en: "We created Don Cheffy because grocery shopping shouldn't be this complicated", es: "Creamos Don Cheffy porque ir al súper no debería ser tan complicado" },
+    title: { en: "We created ReciList because grocery shopping shouldn't be this complicated", es: "Creamos ReciList porque ir al súper no debería ser tan complicado" },
     p1: {
       en: "Incomplete lists, forgotten ingredients, extra trips to the store... it happened to us every week. We realized the problem wasn't cooking, it was <em>planning and shopping</em>.",
       es: "Listas a medias, ingredientes olvidados, viajes extra al súper... nos pasaba cada semana. Nos dimos cuenta de que el problema no era cocinar, sino <em>planificar y comprar</em>.",
     },
     p2: {
-      en: "Don Cheffy uses artificial intelligence to solve that: it generates recipes, automatically builds your shopping list, and organizes everything so you go to the store once with everything you need.",
-      es: "Don Cheffy usa inteligencia artificial para resolver eso: genera recetas, arma tu lista de compras automáticamente y organiza todo para que vayas al súper una vez y con todo lo que necesitas.",
+      en: "ReciList uses artificial intelligence to solve that: it generates recipes, automatically builds your shopping list, and organizes everything so you go to the store once with everything you need.",
+      es: "ReciList usa inteligencia artificial para resolver eso: genera recetas, arma tu lista de compras automáticamente y organiza todo para que vayas al súper una vez y con todo lo que necesitas.",
     },
     p3: {
       en: "🎯 Our goal: make every grocery trip fast, complete, and stress-free.",
@@ -87,7 +87,7 @@ const translations = {
     },
   },
   download: {
-    title: { en: "Download Don Cheffy now", es: "Descarga Don Cheffy ahora" },
+    title: { en: "Download ReciList now", es: "Descarga ReciList ahora" },
     subtitle: { en: "Scan the QR code with your phone to get the app.", es: "Escanea el código QR con tu teléfono para obtener la app." },
     appStore: { en: "App Store", es: "App Store" },
     playStore: { en: "Google Play", es: "Google Play" },
@@ -98,7 +98,7 @@ const translations = {
   },
   featuresSection: {
     title: { en: "Everything you need to cook better", es: "Todo lo que necesitas para cocinar mejor" },
-    subtitle: { en: "From the idea to the grocery list, Don Cheffy is with you every step.", es: "Desde la idea hasta la lista del súper, Don Cheffy te acompaña en cada paso." },
+    subtitle: { en: "From the idea to the grocery list, ReciList is with you every step.", es: "Desde la idea hasta la lista del súper, ReciList te acompaña en cada paso." },
   },
 } as const;
 
