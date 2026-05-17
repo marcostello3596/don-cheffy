@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/assets/logo-white.svg";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#5FD38D] backdrop-blur-lg border-b border-[#5FD38D]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <button onClick={() => scrollTo("hero")} className="flex items-center">
-          <img src={logoImg} alt="ReciList" className="h-9 w-auto brightness-0 invert" />
+          <img src={logoImg} alt="ReciList" className="h-9 w-auto" />
         </button>
 
         <div className="hidden md:flex items-center gap-8">
