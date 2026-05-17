@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#5FD38D] backdrop-blur-lg border-b border-[#5FD38D]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
-          <img src={logoImg} alt="ReciList" className="h-20 w-auto" />
+          <img src={logoImg} alt="ReciList" className="h-20 w-auto translate-y-1.5" />
           <span className="text-white font-bold text-2xl tracking-tight" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>ReciList</span>
         </button>
 
