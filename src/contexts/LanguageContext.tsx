@@ -4,21 +4,23 @@ type Lang = "en" | "es";
 
 const translations = {
   nav: {
-    features: { en: "Features", es: "Funciones" },
-    howItWorks: { en: "How it works", es: "Cómo funciona" },
-    about: { en: "About us", es: "Nosotros" },
-    join: { en: "Download", es: "Descargar" },
+    aiRecipes: { en: "AI Recipes", es: "Recetas con IA" },
+    list: { en: "Shopping list", es: "Lista" },
+    pricing: { en: "Pricing", es: "Precio" },
+    join: { en: "Try ReciList", es: "Probar ReciList" },
   },
   hero: {
     badge: { en: "🚀 Available now", es: "🚀 Disponible ahora" },
-    title1: { en: "Grocery shopping solved. ", es: "Tu súper resuelto. " },
-    title2: { en: " handles it.", es: " lo organiza." },
+    title: { en: "Stop improvising at the store", es: "Dejá de improvisar en el súper" },
     subtitle: {
-      en: "Generate recipes with AI and your shopping list builds itself. Stop improvising at the store and save time every week.",
-      es: "Genera recetas con IA y tu lista de compras se arma sola. Deja de improvisar en el súper y ahorra tiempo cada semana.",
+      en: "Select multiple recipes and generate your shopping list automatically.",
+      es: "Seleccioná múltiples recetas y generá tu lista de compras automáticamente.",
     },
-    cta: { en: "Download the app", es: "Descarga la app" },
-    discover: { en: "Discover more", es: "Descubre más" },
+    cta: { en: "Try ReciList", es: "Probar ReciList" },
+    placeholder: {
+      en: "Space for GIF: selecting recipes and auto-generating list",
+      es: "Espacio para GIF: selección de recetas y generación automática de lista",
+    },
   },
   bubbles: [
     { en: "What am I missing at the store?", es: "¿Qué me falta en el súper?" },
@@ -28,77 +30,110 @@ const translations = {
     { en: "The list is somewhere else", es: "La lista está en otro lado" },
     { en: "What do I need for dinner?", es: "¿Qué necesito para la cena?" },
   ],
-  features: [
-    {
-      title: { en: "Generate recipes with AI and build your list instantly", es: "Genera recetas con IA y arma tu lista al instante" },
-      description: {
-        en: "Tell the AI what you want to cook and get the full recipe. Ingredients are automatically added to your shopping list — no thinking, no forgetting.",
-        es: "Dile a la IA qué quieres cocinar y genera la receta completa. Los ingredientes se agregan automáticamente a tu lista de compras — sin pensar, sin olvidar nada.",
+  aiRecipes: {
+    title: { en: "Add your recipes easily with AI", es: "Añadí tus recetas fácilmente con IA" },
+    text: {
+      en: "No more typing recipes by hand. Share an Instagram post, upload a photo, paste a URL, or just tell the AI what recipe you need.",
+      es: "Nada de cargar recetas a mano. Compartí un post de Instagram, subí una foto, pegá una URL o simplemente decile a la IA qué receta necesitás.",
+    },
+    cards: [
+      {
+        title: { en: "From an Instagram post", es: "Desde un post de Instagram" },
+        placeholder: { en: "Space for GIF: import recipe from Instagram", es: "Espacio para GIF: importar receta desde Instagram" },
       },
-      alt: { en: "AI recipe generator that builds your shopping list", es: "Generador de recetas con IA que arma tu lista de compras" },
-    },
-    {
-      title: { en: "Your shopping list, organized effortlessly", es: "Tu lista de compras, organizada y sin esfuerzo" },
-      description: {
-        en: "All ingredients grouped by category, ready to check off while you shop. Add multiple recipes and the list updates itself. Never forget anything at the store again.",
-        es: "Todos los ingredientes agrupados por categoría, listos para tachar mientras compras. Agrega varias recetas y la lista se actualiza sola. Nunca más olvides algo en el súper.",
+      {
+        title: { en: "From a photo", es: "Desde una foto" },
+        placeholder: { en: "Space for GIF: create recipe from a photo", es: "Espacio para GIF: crear receta desde una foto" },
       },
-      alt: { en: "Smart shopping list organized by category", es: "Lista de compras inteligente organizada por categoría" },
-    },
-    {
-      title: { en: "Plan your week in minutes", es: "Planifica tu semana en minutos" },
-      description: {
-        en: "Organize breakfasts, lunches, and dinners by category. Plan your entire week at a glance and generate the complete shopping list with a single tap.",
-        es: "Organiza desayunos, almuerzos y cenas por categoría. Planifica toda la semana de un vistazo y genera la lista de compras completa con un solo toque.",
+      {
+        title: { en: "From a URL", es: "Desde una URL" },
+        placeholder: { en: "Space for GIF: create recipe from a URL", es: "Espacio para GIF: crear receta desde una URL" },
       },
-      alt: { en: "Weekly meal planner with categories", es: "Planificador semanal de comidas con categorías" },
-    },
-  ],
-  problem: {
-    title: { en: "For those who hate improvising at the store", es: "Para los que odian improvisar en el súper" },
-    description: {
-      en: 'Going to the store without a list, forgetting ingredients, buying too much, not knowing what to cook... sound familiar? <strong class="text-foreground">ReciList automates all that so your week flows smoothly.</strong>',
-      es: 'Ir al súper sin lista, olvidar ingredientes, comprar de más, no saber qué hacer de comer... suena familiar. <strong class="text-foreground">ReciList automatiza todo eso para que tu semana fluya.</strong>',
-    },
-  },
-  howItWorks: {
-    title: { en: "How does it work?", es: "¿Cómo funciona?" },
-    subtitle: { en: "Three steps. From idea to shopping cart.", es: "Tres pasos. De la idea al carrito de compras." },
-    steps: [
-      { title: { en: "Generate your recipe", es: "Genera tu receta" }, desc: { en: "Tell the AI what you want to cook or what ingredients you have. In seconds you have the recipe.", es: "Dile a la IA qué quieres cocinar o qué ingredientes tienes. En segundos tienes la receta." } },
-      { title: { en: "Automatic list", es: "Lista automática" }, desc: { en: "Ingredients are added to your shopping list automatically, organized by category.", es: "Los ingredientes se agregan solos a tu lista de compras, organizados por categoría." } },
-      { title: { en: "Shop stress-free", es: "Compra sin estrés" }, desc: { en: "Go to the store with everything ready. Check off products as you shop and don't forget anything.", es: "Ve al súper con todo listo. Tacha los productos mientras compras y no olvides nada." } },
+      {
+        title: { en: "From free text", es: "Desde texto libre" },
+        placeholder: { en: "Space for GIF: create a recipe by writing to the AI", es: "Espacio para GIF: crear receta escribiéndole a la IA" },
+      },
     ],
   },
-  about: {
-    tag: { en: "From the creators", es: "De los creadores" },
-    title: { en: "We created ReciList because grocery shopping shouldn't be this complicated", es: "Creamos ReciList porque ir al súper no debería ser tan complicado" },
-    p1: {
-      en: "Incomplete lists, forgotten ingredients, extra trips to the store... it happened to us every week. We realized the problem wasn't cooking, it was <em>planning and shopping</em>.",
-      es: "Listas a medias, ingredientes olvidados, viajes extra al súper... nos pasaba cada semana. Nos dimos cuenta de que el problema no era cocinar, sino <em>planificar y comprar</em>.",
+  shoppingList: {
+    title: { en: "Your shopping list, organized and effortless", es: "Tu lista de compras organizada y sin esfuerzo" },
+    text: {
+      en: "All ingredients grouped by category so you walk the store just once, ready to check off as you shop. Add more servings and the list updates itself. Never overbuy or forget anything again.",
+      es: "Todos los ingredientes agrupados por categoría para que recorras el súper solo una vez, listos para tachar mientras comprás. Añadí más porciones y la lista se actualiza sola. Nunca más compres de más ni te olvides algo en el súper.",
     },
-    p2: {
-      en: "ReciList uses artificial intelligence to solve that: it generates recipes, automatically builds your shopping list, and organizes everything so you go to the store once with everything you need.",
-      es: "ReciList usa inteligencia artificial para resolver eso: genera recetas, arma tu lista de compras automáticamente y organiza todo para que vayas al súper una vez y con todo lo que necesitas.",
+    placeholder: {
+      en: "Space for image: shopping list organized by categories",
+      es: "Espacio para imagen: lista de compras organizada por categorías",
     },
-    p3: {
-      en: "🎯 Our goal: make every grocery trip fast, complete, and stress-free.",
-      es: "🎯 Nuestro objetivo: que cada ida al súper sea rápida, completa y sin estrés.",
+  },
+  categories: {
+    title: { en: "The grocery list organizes itself by category", es: "La lista del súper se organiza sola por categorías" },
+    text: {
+      en: "ReciList groups your ingredients so you cross the store once, without bouncing between aisles.",
+      es: "ReciList agrupa tus ingredientes para que atravieses el súper una sola vez, sin ir y venir entre pasillos.",
     },
+    placeholder: {
+      en: "Space for image: list with categories like Produce, Meats, Dairy, Pantry and Frozen",
+      es: "Espacio para imagen: lista con categorías como Verdulería, Carnes, Lácteos, Almacén y Congelados",
+    },
+  },
+  nutrition: {
+    title: { en: "Know the macros of your recipes and shopping", es: "Conocé los macros de tus recetas y compras" },
+    text: {
+      en: "Get the total macronutrients of your shopping list or each recipe to help you hit your goals.",
+      es: "Obtené el total de macronutrientes de tu lista de compras o de cada receta para que te ayude a cumplir tus objetivos.",
+    },
+    placeholder1: { en: "Space for image: total macros of a shopping list", es: "Espacio para imagen: macros totales de una compra" },
+    placeholder2: { en: "Space for image: macros of a single recipe", es: "Espacio para imagen: macros de una receta individual" },
+  },
+  cookConfidence: {
+    title: { en: "Cook with confidence", es: "Cociná con confianza" },
+    text: {
+      en: "Clear recipes, exact ingredients, and steps that are easy to follow. No surprises while you cook.",
+      es: "Recetas claras, ingredientes justos y pasos fáciles de seguir. Sin sorpresas mientras cocinás.",
+    },
+  },
+  problem: {
+    title: { en: "For those who hate improvising at the store", es: "Para los que odian improvisar en el súper" },
+    intro: {
+      en: "Going to the store without a list, forgetting ingredients, buying too much, not knowing what to cook... ReciList automates all that so your week flows.",
+      es: "Ir al súper sin lista, olvidar ingredientes, comprar de más, no saber qué hacer de comer... ReciList automatiza todo eso para que tu semana fluya.",
+    },
+    benefits: [
+      { en: "No more thinking what to buy last minute.", es: "No pensar qué comprar a último momento." },
+      { en: "No more forgetting ingredients.", es: "No olvidarse ingredientes." },
+      { en: "No more overbuying.", es: "No comprar de más." },
+      { en: "Get to the store with a clear list.", es: "Llegar al súper con una lista clara." },
+    ],
+  },
+  pricing: {
+    title: { en: "A useful app, at a sensible price", es: "Una app útil, a un precio lógico" },
+    text: {
+      en: "While many similar apps cost more than USD 3/month, ReciList starts from USD 0.93.",
+      es: "Mientras muchas apps similares cuestan más de USD 3 por mes, ReciList arranca desde USD 0,93.",
+    },
+    others: { en: "Similar apps", es: "Apps similares" },
+    othersPrice: { en: "+USD 3/month", es: "+USD 3/mes" },
+    us: { en: "ReciList", es: "ReciList" },
+    usPrice: { en: "From USD 0.93/month", es: "Desde USD 0,93/mes" },
+  },
+  finalCta: {
+    title: { en: "Stop improvising your next grocery run", es: "Dejá de improvisar tu próxima compra" },
+    subtitle: {
+      en: "Pick your recipes, generate your list and buy only what you need.",
+      es: "Elegí tus recetas, generá tu lista y comprá solo lo que necesitás.",
+    },
+    cta: { en: "Try ReciList", es: "Probar ReciList" },
   },
   download: {
     title: { en: "Download ReciList now", es: "Descarga ReciList ahora" },
-    subtitle: { en: "Scan the QR code with your phone to get the app.", es: "Escanea el código QR con tu teléfono para obtener la app." },
+    subtitle: { en: "Scan the QR code with your phone to get the app.", es: "Escaneá el código QR con tu teléfono para obtener la app." },
     appStore: { en: "App Store", es: "App Store" },
     playStore: { en: "Google Play", es: "Google Play" },
-    scanLabel: { en: "Scan to download", es: "Escanea para descargar" },
+    scanLabel: { en: "Scan to download", es: "Escaneá para descargar" },
   },
   footer: {
     rights: { en: "All rights reserved.", es: "Todos los derechos reservados." },
-  },
-  featuresSection: {
-    title: { en: "Everything you need to cook better", es: "Todo lo que necesitas para cocinar mejor" },
-    subtitle: { en: "From the idea to the grocery list, ReciList is with you every step.", es: "Desde la idea hasta la lista del súper, ReciList te acompaña en cada paso." },
   },
 } as const;
 
@@ -113,7 +148,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("es");
   const toggleLang = () => setLang((l) => (l === "en" ? "es" : "en"));
 
   return (
