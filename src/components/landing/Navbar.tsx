@@ -23,9 +23,9 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex items-center gap-8">
-          <button onClick={() => scrollTo("features")} className="text-sm text-white/90 hover:text-white transition-colors">{t.nav.features[lang]}</button>
-          <button onClick={() => scrollTo("how-it-works")} className="text-sm text-white/90 hover:text-white transition-colors">{t.nav.howItWorks[lang]}</button>
-          <button onClick={() => scrollTo("about")} className="text-sm text-white/90 hover:text-white transition-colors">{t.nav.about[lang]}</button>
+          <button onClick={() => scrollTo("ai-recipes")} className="text-sm text-white/90 hover:text-white transition-colors">{t.nav.aiRecipes[lang]}</button>
+          <button onClick={() => scrollTo("shopping-list")} className="text-sm text-white/90 hover:text-white transition-colors">{t.nav.list[lang]}</button>
+          <button onClick={() => scrollTo("pricing")} className="text-sm text-white/90 hover:text-white transition-colors">{t.nav.pricing[lang]}</button>
           <button
             onClick={toggleLang}
             className="flex items-center gap-1.5 text-sm text-white/90 hover:text-white transition-colors"
@@ -52,9 +52,9 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-[#5FD38D] border-b border-[#5FD38D]"
           >
             <div className="flex flex-col gap-4 px-6 py-6">
-              <button onClick={() => scrollTo("features")} className="text-left text-white/90 hover:text-white">{t.nav.features[lang]}</button>
-              <button onClick={() => scrollTo("how-it-works")} className="text-left text-white/90 hover:text-white">{t.nav.howItWorks[lang]}</button>
-              <button onClick={() => scrollTo("about")} className="text-left text-white/90 hover:text-white">{t.nav.about[lang]}</button>
+              <button onClick={() => scrollTo("ai-recipes")} className="text-left text-white/90 hover:text-white">{t.nav.aiRecipes[lang]}</button>
+              <button onClick={() => scrollTo("shopping-list")} className="text-left text-white/90 hover:text-white">{t.nav.list[lang]}</button>
+              <button onClick={() => scrollTo("pricing")} className="text-left text-white/90 hover:text-white">{t.nav.pricing[lang]}</button>
               <button onClick={toggleLang} className="text-left text-white/90 hover:text-white flex items-center gap-1.5">
                 <Globe className="h-4 w-4" /> {lang === "en" ? "Español" : "English"}
               </button>
