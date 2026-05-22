@@ -1,9 +1,32 @@
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
-import Placeholder from "./Placeholder";
 
 const ShoppingListSection = () => {
   const { lang, t } = useLanguage();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          void video.play();
+        } else {
+          video.pause();
+        }
+      },
+      { rootMargin: "180px" },
+    );
+
+    observer.observe(video);
+    return () => {
+      observer.disconnect();
+      video.pause();
+    };
+  }, []);
 
   return (
     <section id="shopping-list" className="py-24 sm:py-32 bg-secondary/40">
@@ -24,9 +47,15 @@ const ShoppingListSection = () => {
             </p>
           </div>
           <div className="flex-1 w-full flex justify-center">
-            <Placeholder
-              text={t.shoppingList.placeholder[lang]}
-              className="aspect-[9/16] w-full max-w-[280px]"
+            <video
+              ref={videoRef}
+              className="h-[60vh] max-h-[640px] min-h-[420px] w-auto max-w-full object-contain [mix-blend-mode:multiply]"
+              src="/videos/recilist-shopping-list.mp4"
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={t.shoppingList.placeholder[lang]}
             />
           </div>
         </motion.div>
