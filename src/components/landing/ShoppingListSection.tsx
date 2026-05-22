@@ -29,7 +29,7 @@ const ShoppingListSection = () => {
   }, []);
 
   return (
-    <section id="shopping-list" className="py-24 sm:py-32" style={{ backgroundColor: "#DED8CE" }}>
+    <section id="shopping-list" className="py-24 sm:py-32" style={{ backgroundColor: "#E8E4DD" }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,7 +49,7 @@ const ShoppingListSection = () => {
           <div className="flex-1 w-full flex justify-center">
             <video
               ref={videoRef}
-              className="h-[60vh] max-h-[640px] min-h-[420px] w-auto max-w-full object-contain [mix-blend-mode:multiply]"
+              className="h-[60vh] max-h-[640px] min-h-[420px] w-auto max-w-full object-contain"
               src="/videos/recilist-shopping-list.mp4"
               muted
               loop
