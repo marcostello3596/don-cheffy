@@ -5,9 +5,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const icons = [Instagram, Link2, Sparkles];
 
-const recipeVideos: (string | null)[] = [
-  "/videos/recilist-instagram-recipe.mov",
-  "/videos/recilist-url-recipe.mov",
+const recipeVideos: string[] = [
+  "/videos/recilist-instagram-recipe.mp4",
+  "/videos/recilist-url-recipe.mp4",
   "/videos/recilist-ai-recipe.mp4",
 ];
 
@@ -58,7 +58,7 @@ interface FeatureDemoProps {
   title: string;
   subtitle: string;
   placeholder: string;
-  video: string | null;
+  video: string;
   Icon: typeof Instagram;
   index: number;
 }
@@ -71,17 +71,7 @@ const FeatureDemo = ({ title, subtitle, placeholder, video, Icon, index }: Featu
     transition={{ delay: index * 0.1, duration: 0.55 }}
     className="flex flex-col items-center text-center"
   >
-    <div className="flex h-[60vh] max-h-[640px] min-h-[420px] w-full items-center justify-center">
-      {video ? (
-        <ManagedVideo src={video} label={placeholder} />
-      ) : (
-        <div className="flex h-full w-full max-w-[280px] items-center justify-center px-6 text-center text-sm leading-relaxed text-muted-foreground">
-          {placeholder}
-        </div>
-      )}
-    </div>
-
-    <div className="mt-6 flex flex-col items-center gap-3">
+    <div className="mb-6 flex flex-col items-center gap-3">
       <div className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary">
         <Icon className="h-5 w-5" />
       </div>
@@ -93,6 +83,10 @@ const FeatureDemo = ({ title, subtitle, placeholder, video, Icon, index }: Featu
           {subtitle}
         </p>
       )}
+    </div>
+
+    <div className="flex h-[60vh] max-h-[640px] min-h-[420px] w-full items-center justify-center">
+      <ManagedVideo src={video} label={placeholder} />
     </div>
   </motion.div>
 );
