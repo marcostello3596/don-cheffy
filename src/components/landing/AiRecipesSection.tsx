@@ -85,7 +85,7 @@ const FeatureDemo = ({ title, subtitle, placeholder, video, Icon, index }: Featu
       )}
     </div>
 
-    <div className="flex h-[60vh] max-h-[640px] min-h-[420px] w-full items-center justify-center">
+    <div className="flex h-[60vh] max-h-[640px] min-h-[420px] w-full items-end justify-center">
       <ManagedVideo src={video} label={placeholder} />
     </div>
   </motion.div>
