@@ -33,24 +33,23 @@ const translations = {
   aiRecipes: {
     title: { en: "Add your recipes easily with AI", es: "Añadí tus recetas fácilmente con IA" },
     text: {
-      en: "No more typing recipes by hand. Share an Instagram post, upload a photo, paste a URL, or just tell the AI what recipe you need.",
-      es: "Nada de cargar recetas a mano. Compartí un post de Instagram, subí una foto, pegá una URL o simplemente decile a la IA qué receta necesitás.",
+      en: "No more typing recipes by hand. Share an Instagram post, paste a URL, or just tell the AI what recipe you need.",
+      es: "Nada de cargar recetas a mano. Compartí un post de Instagram, pegá una URL o simplemente decile a la IA qué receta necesitás.",
     },
     cards: [
       {
         title: { en: "From an Instagram post", es: "Desde un post de Instagram" },
+        subtitle: { en: "Paste the link, get the recipe.", es: "Pegá el link, recibí la receta." },
         placeholder: { en: "Space for GIF: import recipe from Instagram", es: "Espacio para GIF: importar receta desde Instagram" },
       },
       {
-        title: { en: "From a photo", es: "Desde una foto" },
-        placeholder: { en: "Space for GIF: create recipe from a photo", es: "Espacio para GIF: crear receta desde una foto" },
-      },
-      {
         title: { en: "From a URL", es: "Desde una URL" },
+        subtitle: { en: "Any blog or recipe site.", es: "Cualquier blog o sitio de recetas." },
         placeholder: { en: "Space for GIF: create recipe from a URL", es: "Espacio para GIF: crear receta desde una URL" },
       },
       {
         title: { en: "From free text", es: "Desde texto libre" },
+        subtitle: { en: "Just tell the AI what you want.", es: "Decile a la IA lo que querés cocinar." },
         placeholder: { en: "Space for GIF: create a recipe by writing to the AI", es: "Espacio para GIF: crear receta escribiéndole a la IA" },
       },
     ],
