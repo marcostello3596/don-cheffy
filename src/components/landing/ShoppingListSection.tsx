@@ -29,7 +29,7 @@ const ShoppingListSection = () => {
   }, []);
 
   return (
-    <section id="shopping-list" className="py-24 sm:py-32" style={{ backgroundColor: "#E8E4DD" }}>
+    <section id="shopping-list" className="py-24 sm:py-32" style={{ backgroundColor: "#F2F1EE" }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
