@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import Placeholder from "./Placeholder";
 
 const bubbleData = [
   { emoji: "🛒", left: "4%", top: "20%" },
@@ -20,8 +19,7 @@ const ScrollHero = () => {
   return (
     <section
       id="hero"
-      className="relative pt-28 pb-20 sm:pt-32 sm:pb-28 overflow-hidden"
-      style={{ background: "var(--hero-gradient)" }}
+      className="relative overflow-hidden bg-white pt-28 pb-20 sm:pt-32 sm:pb-28"
     >
       {/* Floating bubbles (decorative) */}
       {bubbleData.map((b, i) => (
@@ -73,11 +71,17 @@ const ScrollHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mx-auto max-w-3xl"
+          className="mx-auto flex justify-center"
         >
-          <Placeholder
-            text={t.hero.placeholder[lang]}
-            className="aspect-video bg-background/60 backdrop-blur-sm"
+          <video
+            className="block h-auto max-h-[72vh] max-w-[82vw] object-contain"
+            src="/videos/recilist-phone-white-bg.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label={t.hero.placeholder[lang]}
           />
         </motion.div>
       </div>
