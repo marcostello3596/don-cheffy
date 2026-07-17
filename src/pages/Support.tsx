@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Copy, Check, ChevronDown, ArrowLeft, HelpCircle } from "lucide-react";
+import { Mail, Copy, Check, ChevronDown, ArrowLeft, HelpCircle, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useSEO } from "@/hooks/useSEO";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
 
@@ -40,16 +41,60 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
   );
 };
 
-const Support = () => {
-  const { lang, t } = useLanguage();
+const restorePurchasesText = {
+  en: {
+    title: "Restore Plus Subscription Purchases",
+    subtitle: "If you changed your device, reinstalled the app, or upgraded, follow these steps to restore your ReciList Plus access:",
+    step1: "Open the ReciList app on your device.",
+    step2: "Navigate to the Settings screen or tap any premium feature to show the Subscription screen.",
+    step3: "Tap the \"Restore Purchases\" or \"Restaurar compras\" button at the bottom of the paywall.",
+    step4: "Ensure you are signed in on your device with the same Apple ID used to make the original purchase.",
+    step5: "If your Plus entitlement is not recovered, please contact support below with your account email and Firebase UID.",
+    techNote: "Note: The RevenueCat paywall in the app must have a native 'Restore Purchases' action button, not a link to this URL."
+  },
+  es: {
+    title: "Restaurar Compras de Suscripción Plus",
+    subtitle: "Si cambiaste de dispositivo, reinstalaste la app o actualizaste, sigue estos pasos para recuperar tu acceso a ReciList Plus:",
+    step1: "Abrí la app ReciList en tu dispositivo.",
+    step2: "Navegá a la pantalla de Configuración o intentá acceder a una función premium para abrir la pantalla de Suscripción.",
+    step3: "Tocá el botón “Restaurar compras” o “Restore Purchases” en la parte inferior de la pantalla de suscripción.",
+    step4: "Asegurate de estar usando el mismo Apple ID con el que realizaste la compra original.",
+    step5: "Si tu entitlement “plus” no se recupera, contactá a soporte enviando tu email y Firebase UID.",
+    techNote: "Nota técnica: El paywall de RevenueCat en la app móvil debe tener un botón con la acción nativa “Restore Purchases”, no una redirección URL."
+  }
+};
+
+const Support = ({ lang = "es" }: { lang?: "en" | "es" }) => {
+  const { setLang, t } = useLanguage();
   const [copied, setCopied] = useState(false);
-  const email = "info@recilist.app";
+  const email = "support@recilist.app";
+
+  // Sync language context with route lang
+  useEffect(() => {
+    setLang(lang);
+  }, [lang, setLang]);
+
+  const pageTitle = lang === "es" ? "Soporte al Cliente | ReciList" : "Customer Support | ReciList";
+  const pageDescription = lang === "es"
+    ? "Estamos para ayudarte. Contactá al soporte de ReciList o aprendé cómo restaurar tus compras de la suscripción Plus."
+    : "We are here to help you. Contact ReciList customer support or learn how to restore your Plus subscription purchases.";
+  const canonicalUrl = `https://recilist.app${lang === "es" ? "/es" : ""}/support`;
+
+  useSEO({
+    title: pageTitle,
+    description: pageDescription,
+    canonicalUrl,
+    lang,
+    path: "support",
+  });
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  const rp = restorePurchasesText[lang];
 
   return (
     <div className="min-h-screen bg-secondary/30 flex flex-col">
@@ -68,7 +113,7 @@ const Support = () => {
           </Link>
 
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-4">
               {t.support.title[lang]}
             </h1>
@@ -78,7 +123,7 @@ const Support = () => {
           </div>
 
           {/* Contact Card */}
-          <div className="bg-background border border-border rounded-3xl p-8 sm:p-10 shadow-xl mb-16 relative overflow-hidden">
+          <div className="bg-background border border-border rounded-3xl p-8 sm:p-10 shadow-xl mb-12 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none" />
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="flex items-center gap-5">
@@ -123,6 +168,35 @@ const Support = () => {
                   <span>{t.support.sendEmail[lang]}</span>
                 </a>
               </div>
+            </div>
+          </div>
+
+          {/* Restore Purchases Card */}
+          <div className="bg-background border border-border rounded-3xl p-8 sm:p-10 shadow-xl mb-12 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#5FD38D]/5 rounded-bl-full pointer-events-none" />
+            <div className="flex items-center gap-3 mb-6">
+              <RefreshCw className="h-6 w-6 text-primary shrink-0" />
+              <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-foreground">
+                {rp.title}
+              </h2>
+            </div>
+            
+            <p className="text-muted-foreground mb-6 leading-relaxed text-sm sm:text-base">
+              {rp.subtitle}
+            </p>
+
+            <ol className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed pl-4 list-decimal marker:text-primary marker:font-bold mb-8">
+              <li>{rp.step1}</li>
+              <li>{rp.step2}</li>
+              <li><strong>{rp.step3}</strong></li>
+              <li>{rp.step4}</li>
+              <li>{rp.step5}</li>
+            </ol>
+
+            {/* Note technical inside code context */}
+            {/* Technical Note: The RevenueCat paywall in the app must have a native "Restore Purchases" action, not a web link. */}
+            <div className="mt-4 p-4 rounded-xl border border-muted bg-muted/30 text-muted-foreground text-xs font-mono">
+              {rp.techNote}
             </div>
           </div>
 

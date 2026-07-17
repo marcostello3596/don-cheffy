@@ -150,6 +150,9 @@ const translations = {
   footer: {
     rights: { en: "All rights reserved.", es: "Todos los derechos reservados." },
     support: { en: "Customer Support", es: "Soporte al Cliente" },
+    privacy: { en: "Privacy Policy", es: "Política de Privacidad" },
+    terms: { en: "Terms of Use", es: "Términos de Uso" },
+    accountDeletion: { en: "Delete Account", es: "Eliminar Cuenta" },
   },
 } as const;
 
@@ -157,6 +160,7 @@ type Translations = typeof translations;
 
 interface LanguageContextType {
   lang: Lang;
+  setLang: (lang: Lang) => void;
   toggleLang: () => void;
   t: Translations;
 }
@@ -168,7 +172,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const toggleLang = () => setLang((l) => (l === "en" ? "es" : "en"));
 
   return (
-    <LanguageContext.Provider value={{ lang, toggleLang, t: translations }}>
+    <LanguageContext.Provider value={{ lang, setLang, toggleLang, t: translations }}>
       {children}
     </LanguageContext.Provider>
   );
