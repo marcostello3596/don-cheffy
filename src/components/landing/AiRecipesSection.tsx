@@ -124,7 +124,7 @@ const SingleShowcaseVideo = ({ src, label }: SingleShowcaseVideoProps) => {
   return (
     <video
       ref={videoRef}
-      className="h-full w-auto max-w-full object-contain relative z-10 drop-shadow-xl"
+      className="h-full w-auto max-w-full object-contain relative z-10"
       src={src}
       autoPlay
       muted

@@ -119,13 +119,13 @@ const translations = {
   pricing: {
     title: { en: "A useful app, at a sensible price", es: "Una app útil, a un precio lógico" },
     text: {
-      en: "While many similar apps cost more than USD 3/month, ReciList starts from USD 0.93.",
-      es: "Mientras muchas apps similares cuestan más de USD 3 por mes, ReciList arranca desde USD 0,93.",
+      en: "While many similar apps cost more than USD 5/month, ReciList starts from USD 1.99.",
+      es: "Mientras muchas apps similares cuestan más de USD 5 por mes, ReciList arranca desde USD 1,99.",
     },
     others: { en: "Similar apps", es: "Apps similares" },
-    othersPrice: { en: "+USD 3/month", es: "+USD 3/mes" },
+    othersPrice: { en: "+USD 5/month", es: "+USD 5/mes" },
     us: { en: "ReciList", es: "ReciList" },
-    usPrice: { en: "From USD 0.93/month", es: "Desde USD 0,93/mes" },
+    usPrice: { en: "From USD 1.99/month", es: "Desde USD 1,99/mes" },
   },
   finalCta: {
     title: { en: "Stop improvising your next grocery run", es: "Dejá de improvisar tu próxima compra" },
