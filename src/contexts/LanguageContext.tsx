@@ -48,7 +48,7 @@ const translations = {
         placeholder: { en: "Space for GIF: create recipe from a URL", es: "Espacio para GIF: crear receta desde una URL" },
       },
       {
-        title: { en: "From free text", es: "Desde texto libre" },
+        title: { en: "Let AI handle the rest!", es: "O simplemente describe lo que quieras" },
         subtitle: { en: "Just tell the AI what you want.", es: "Decile a la IA lo que querés cocinar." },
         placeholder: { en: "Space for GIF: create a recipe by writing to the AI", es: "Espacio para GIF: crear receta escribiéndole a la IA" },
       },
@@ -141,7 +141,7 @@ const translations = {
     backHome: { en: "Back to Home", es: "Volver al Inicio" },
     faqTitle: { en: "Frequently Asked Questions", es: "Preguntas Frecuentes" },
     faq1Q: { en: "How do I import a recipe?", es: "¿Cómo importo una receta?" },
-    faq1A: { en: "You can import recipes using our AI by sharing an Instagram post, pasting a website URL, or simply describing the recipe in free text.", es: "Podés importar recetas usando nuestra IA compartiendo un post de Instagram, pegando una URL de un sitio web, o simplemente describiendo la receta en texto libre." },
+    faq1A: { en: "You can import recipes using our AI by sharing an Instagram post, pasting a website URL, or simply describing what you want.", es: "Podés importar recetas usando nuestra IA compartiendo un post de Instagram, pegando una URL de un sitio web, o simplemente describiendo lo que quieras." },
     faq2Q: { en: "Is my shopping list updated automatically?", es: "¿Mi lista de compras se actualiza sola?" },
     faq2A: { en: "Yes! When you add recipes or change the number of servings, all ingredients are aggregated and organized by category automatically.", es: "¡Sí! Al agregar recetas o cambiar la cantidad de porciones, todos los ingredientes se unifican y organizan por categoría automáticamente." },
     faq3Q: { en: "Where can I download the app?", es: "¿Desde dónde puedo descargar la app?" },
