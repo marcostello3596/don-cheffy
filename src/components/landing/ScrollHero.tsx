@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const bubbleData = [
-  { emoji: "🤔", top: "12%", position: "left" },
-  { emoji: "😩", top: "18%", position: "right" },
-  { emoji: "💸", top: "54%", position: "left" },
-  { emoji: "🤷", top: "60%", position: "right" },
+  { emoji: "🤔", top: "14%", position: "left" },
+  { emoji: "😩", top: "20%", position: "right" },
+  { emoji: "💸", top: "56%", position: "left" },
+  { emoji: "🤷", top: "62%", position: "right" },
 ];
 
 const ScrollHero = () => {
@@ -63,12 +63,13 @@ const ScrollHero = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4 + i * 0.12, duration: 0.5 }}
-              className={`absolute hidden md:flex items-center gap-2 bg-background/95 backdrop-blur-sm border border-border rounded-full px-4 py-2.5 shadow-xl pointer-events-none z-20 ${
-                b.position === "left"
-                  ? "-left-4 translate-x-[-100%]"
-                  : "-right-4 translate-x-[100%]"
-              }`}
-              style={{ top: b.top }}
+              className="absolute hidden md:flex items-center gap-2 bg-background/95 backdrop-blur-sm border border-border rounded-full px-4 py-2.5 shadow-xl pointer-events-none z-20"
+              style={{
+                top: b.top,
+                ...(b.position === "left"
+                  ? { left: "calc(50% - 190px)", transform: "translateX(-100%)" }
+                  : { left: "calc(50% + 190px)" }),
+              }}
             >
               <span className="text-lg">{b.emoji}</span>
               <span className="text-sm font-medium text-foreground whitespace-nowrap">
