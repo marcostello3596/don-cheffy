@@ -47,10 +47,10 @@ const restorePurchasesText = {
     subtitle: "If you changed your device, reinstalled the app, or upgraded, follow these steps to restore your ReciList Plus access:",
     step1: "Open the ReciList app on your device.",
     step2: "Navigate to the Settings screen or tap any premium feature to show the Subscription screen.",
-    step3: "Tap the \"Restore Purchases\" or \"Restaurar compras\" button at the bottom of the paywall.",
-    step4: "Ensure you are signed in on your device with the same Apple ID used to make the original purchase.",
-    step5: "If your Plus entitlement is not recovered, please contact support below with your account email and Firebase UID.",
-    techNote: "Note: The RevenueCat paywall in the app must have a native 'Restore Purchases' action button, not a link to this URL."
+    step3: "Tap the \"Restore Purchases\" or \"Restaurar compras\" button at the bottom of the Subscription screen.",
+    step4: "Ensure you are signed in on your device with the same Apple ID or Google account used to make the original purchase.",
+    step5: "If your ReciList Plus subscription is not restored automatically, please contact support below with your account email.",
+    techNote: "Note: The option to restore purchases is available directly inside the mobile app on the subscription screen."
   },
   es: {
     title: "Restaurar Compras de Suscripción Plus",
@@ -58,9 +58,9 @@ const restorePurchasesText = {
     step1: "Abrí la app ReciList en tu dispositivo.",
     step2: "Navegá a la pantalla de Configuración o intentá acceder a una función premium para abrir la pantalla de Suscripción.",
     step3: "Tocá el botón “Restaurar compras” o “Restore Purchases” en la parte inferior de la pantalla de suscripción.",
-    step4: "Asegurate de estar usando el mismo Apple ID con el que realizaste la compra original.",
-    step5: "Si tu entitlement “plus” no se recupera, contactá a soporte enviando tu email y Firebase UID.",
-    techNote: "Nota técnica: El paywall de RevenueCat en la app móvil debe tener un botón con la acción nativa “Restore Purchases”, no una redirección URL."
+    step4: "Asegurate de estar usando la misma cuenta de Apple ID o Google Play con la que realizaste la compra original.",
+    step5: "Si tu suscripción a ReciList Plus no se restablece automáticamente, contactá a soporte enviando tu email.",
+    techNote: "Nota: La opción para restaurar compras se encuentra disponible directamente dentro de la aplicación móvil en la pantalla de suscripción."
   }
 };
 
