@@ -4,6 +4,7 @@ import Navbar from "@/components/landing/Navbar";
 import ScrollHero from "@/components/landing/ScrollHero";
 import AiRecipesSection from "@/components/landing/AiRecipesSection";
 import ShoppingListSection from "@/components/landing/ShoppingListSection";
+import FamilyAccountSection from "@/components/landing/FamilyAccountSection";
 import NutritionSection from "@/components/landing/NutritionSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import PricingSection from "@/components/landing/PricingSection";
@@ -32,6 +33,7 @@ const Index = () => {
       <ScrollHero />
       <AiRecipesSection />
       <ShoppingListSection />
+      <FamilyAccountSection />
       <NutritionSection />
       <ProblemSection />
       <PricingSection />

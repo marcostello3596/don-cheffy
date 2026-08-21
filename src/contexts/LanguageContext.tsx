@@ -74,6 +74,19 @@ const translations = {
       es: "Espacio para imagen: lista con categorías como Verdulería, Carnes, Lácteos, Almacén y Congelados",
     },
   },
+  familyAccount: {
+    badge: { en: "Built for sharing", es: "Pensado para compartir" },
+    title: { en: "One account for your whole home", es: "Una sola cuenta para todo el hogar" },
+    text: {
+      en: "Share the same account with your partner or family so all your household recipes and grocery lists stay in one place. If you eat together, there's no need to pay double.",
+      es: "Compartí la misma cuenta con tu pareja o familia para centralizar todas las recetas de la casa en un solo lugar. Si comen lo mismo, no hace falta pagar dos suscripciones.",
+    },
+    features: [
+      { en: "All household recipes organized in one shared library.", es: "Todas las recetas de la casa organizadas en una biblioteca compartida." },
+      { en: "Instant list updates so whoever goes to the store has the exact items.", es: "Lista actualizada al instante para que quien vaya al súper tenga todo a mano." },
+      { en: "Save money with a single account for the entire household.", es: "Ahorrá pagando una sola cuenta para todo el hogar." },
+    ],
+  },
   nutrition: {
     title: { en: "Know the macros of your recipes and shopping", es: "Conocé los macros de tus recetas y compras" },
     text: {
