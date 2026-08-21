@@ -37,16 +37,19 @@ const translations = {
     cards: [
       {
         title: { en: "From an Instagram post", es: "Desde un post de Instagram" },
+        shortTitle: { en: "From Instagram", es: "Desde Instagram" },
         subtitle: { en: "Paste the link, get the recipe.", es: "Pegá el link, recibí la receta." },
         placeholder: { en: "Space for GIF: import recipe from Instagram", es: "Espacio para GIF: importar receta desde Instagram" },
       },
       {
         title: { en: "From a URL", es: "Desde una URL" },
+        shortTitle: { en: "From a link", es: "Desde un enlace" },
         subtitle: { en: "Any blog or recipe site.", es: "Cualquier blog o sitio de recetas." },
         placeholder: { en: "Space for GIF: create recipe from a URL", es: "Espacio para GIF: crear receta desde una URL" },
       },
       {
         title: { en: "Let AI handle the rest!", es: "O simplemente describe lo que quieras" },
+        shortTitle: { en: "Generate with AI", es: "Generala con IA" },
         subtitle: { en: "Just tell the AI what you want.", es: "Decile a la IA lo que querés cocinar." },
         placeholder: { en: "Space for GIF: create a recipe by writing to the AI", es: "Espacio para GIF: crear receta escribiéndole a la IA" },
       },

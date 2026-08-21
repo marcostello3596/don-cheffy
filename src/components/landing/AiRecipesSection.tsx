@@ -47,9 +47,9 @@ const AiRecipesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8 flex justify-center w-full"
+          className="mb-8 flex justify-center w-full max-w-2xl mx-auto px-1"
         >
-          <div className="w-full sm:w-auto max-w-full overflow-x-auto no-scrollbar p-1.5 bg-secondary/80 backdrop-blur-md rounded-2xl sm:rounded-full border border-border/60 shadow-inner flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2">
+          <div className="w-full sm:w-auto grid grid-cols-3 gap-1 sm:gap-2 p-1.5 bg-secondary/80 backdrop-blur-md rounded-2xl sm:rounded-full border border-border/60 shadow-inner">
             {demos.map((demo, idx) => {
               const Icon = demo.Icon;
               const isActive = activeIndex === idx;
@@ -57,14 +57,19 @@ const AiRecipesSection = () => {
                 <button
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
-                  className={`shrink-0 flex items-center justify-center gap-2 px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                  className={`flex items-center justify-center gap-1.5 sm:gap-2 px-2 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-full text-[11px] xs:text-xs sm:text-sm font-semibold transition-all duration-300 ${
                     isActive
-                      ? "bg-brand-gradient text-white shadow-md shadow-primary/20 scale-105"
+                      ? "bg-brand-gradient text-white shadow-md shadow-primary/20 scale-[1.02] sm:scale-105"
                       : "text-muted-foreground hover:text-foreground hover:bg-background/60"
                   }`}
                 >
-                  <Icon className="h-4 w-4 shrink-0" />
-                  <span className="whitespace-nowrap">{demo.card.title[lang]}</span>
+                  <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
+                  <span className="hidden sm:inline whitespace-nowrap">
+                    {demo.card.title[lang]}
+                  </span>
+                  <span className="inline sm:hidden whitespace-nowrap">
+                    {demo.card.shortTitle?.[lang] || demo.card.title[lang]}
+                  </span>
                 </button>
               );
             })}
