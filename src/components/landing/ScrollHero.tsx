@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const bubbleData = [
-  { emoji: "🛒", left: "2%", top: "15%" },
-  { emoji: "😩", right: "2%", top: "13%" },
-  { emoji: "💸", left: "2%", top: "60%" },
-  { emoji: "🤷", right: "2%", top: "64%" },
+  { emoji: "🤔", left: "9%", top: "22%" },
+  { emoji: "😩", right: "9%", top: "18%" },
+  { emoji: "💸", left: "11%", top: "64%" },
+  { emoji: "🤷", right: "11%", top: "68%" },
 ];
 
 const ScrollHero = () => {
@@ -28,7 +28,7 @@ const ScrollHero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4 + i * 0.12, duration: 0.5 }}
-          className="absolute hidden xl:flex items-center gap-2 bg-background/90 backdrop-blur-sm border border-border rounded-full px-4 py-2.5 shadow-lg pointer-events-none"
+          className="absolute hidden lg:flex items-center gap-2 bg-background/90 backdrop-blur-sm border border-border rounded-full px-4 py-2.5 shadow-lg pointer-events-none z-20"
           style={{ top: b.top, left: b.left, right: b.right } as React.CSSProperties}
         >
           <span className="text-lg">{b.emoji}</span>

@@ -23,12 +23,10 @@ const translations = {
     },
   },
   bubbles: [
-    { en: "What am I missing at the store?", es: "¿Qué me falta en el súper?" },
-    { en: "I always forget something", es: "Siempre olvido algo" },
-    { en: "How much will I spend?", es: "¿Cuánto voy a gastar?" },
+    { en: "Am I missing something?", es: "¿Me estará faltando algo?" },
+    { en: "I forgot that stuff! We have to go back", es: "¡Me olvidé de eso! Hay que volver" },
+    { en: "Did I buy too much again?", es: "¿Otra vez compré de más?" },
     { en: "I don't know what to buy", es: "No sé qué comprar" },
-    { en: "The list is somewhere else", es: "La lista está en otro lado" },
-    { en: "What do I need for dinner?", es: "¿Qué necesito para la cena?" },
   ],
   aiRecipes: {
     title: { en: "Add your recipes easily with AI", es: "Añadí tus recetas fácilmente con IA" },
