@@ -91,7 +91,7 @@ const AiRecipesSection = () => {
               )}
 
               {/* Single Video Showcase Window */}
-              <div className="relative flex h-[60vh] max-h-[620px] min-h-[400px] w-full justify-center items-center rounded-3xl bg-gradient-to-b from-primary/5 via-primary/[0.02] to-transparent p-6 sm:p-10 border border-primary/20 shadow-2xl shadow-primary/10">
+              <div className="relative flex h-[60vh] max-h-[620px] min-h-[400px] w-full justify-center items-center bg-white">
                 <SingleShowcaseVideo
                   src={activeDemo.video}
                   label={activeDemo.card.placeholder[lang]}
