@@ -67,7 +67,7 @@ const ScrollHero = () => {
               style={{
                 top: b.top,
                 ...(b.position === "left"
-                  ? { left: "calc(50% - 190px)", transform: "translateX(-100%)" }
+                  ? { right: "calc(50% + 190px)" }
                   : { left: "calc(50% + 190px)" }),
               }}
             >
