@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-12 bg-[#5FD38D] text-white">
+    <footer className="py-12 bg-brand-gradient text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full border-b border-white/20 pb-8 mb-4">

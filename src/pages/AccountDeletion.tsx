@@ -92,7 +92,7 @@ const AccountDeletion = ({ lang }: { lang: "en" | "es" }) => {
           <div className="grid gap-8">
             {/* Option 1: In-App */}
             <div className="bg-background border border-border rounded-3xl p-8 shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#5FD38D]/5 rounded-bl-full pointer-events-none" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none" />
               <div className="flex items-center gap-3 mb-6">
                 <Trash2 className="h-6 w-6 text-primary shrink-0" />
                 <h2 className="text-xl sm:text-2xl font-bold text-foreground">
@@ -108,7 +108,7 @@ const AccountDeletion = ({ lang }: { lang: "en" | "es" }) => {
 
             {/* Option 2: Email */}
             <div className="bg-background border border-border rounded-3xl p-8 shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#5FD38D]/5 rounded-bl-full pointer-events-none" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none" />
               <div className="flex items-center gap-3 mb-6">
                 <Mail className="h-6 w-6 text-primary shrink-0" />
                 <h2 className="text-xl sm:text-2xl font-bold text-foreground">

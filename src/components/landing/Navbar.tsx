@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#5FD38D] backdrop-blur-lg border-b border-[#5FD38D]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-gradient backdrop-blur-lg border-b border-white/10 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
           <img src={logoImg} alt="ReciList" className="h-20 w-auto translate-y-1.5" />
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Globe className="h-4 w-4" />
             {lang === "en" ? "ES" : "EN"}
           </button>
-          <Button onClick={() => scrollTo("download")} size="sm" variant="secondary" className="rounded-full px-6 bg-white text-[#5FD38D] hover:bg-white/90">
+          <Button onClick={() => scrollTo("download")} size="sm" variant="secondary" className="rounded-full px-6 bg-white text-[#15AA99] hover:bg-white/90 font-semibold shadow-sm">
             {t.nav.join[lang]}
           </Button>
         </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-[#5FD38D] border-b border-[#5FD38D]"
+            className="md:hidden overflow-hidden bg-brand-gradient border-b border-white/10"
           >
             <div className="flex flex-col gap-4 px-6 py-6">
               <button onClick={() => scrollTo("ai-recipes")} className="text-left text-white/90 hover:text-white">{t.nav.aiRecipes[lang]}</button>
@@ -79,7 +79,7 @@ const Navbar = () => {
               <button onClick={handleLanguageToggle} className="text-left text-white/90 hover:text-white flex items-center gap-1.5">
                 <Globe className="h-4 w-4" /> {lang === "en" ? "Español" : "English"}
               </button>
-              <Button onClick={() => scrollTo("download")} variant="secondary" className="rounded-full w-full bg-white text-[#5FD38D] hover:bg-white/90">{t.nav.join[lang]}</Button>
+              <Button onClick={() => scrollTo("download")} variant="secondary" className="rounded-full w-full bg-white text-[#15AA99] hover:bg-white/90 font-semibold">{t.nav.join[lang]}</Button>
             </div>
           </motion.div>
         )}

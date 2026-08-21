@@ -173,7 +173,7 @@ const Support = ({ lang = "es" }: { lang?: "en" | "es" }) => {
 
           {/* Restore Purchases Card */}
           <div className="bg-background border border-border rounded-3xl p-8 sm:p-10 shadow-xl mb-12 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#5FD38D]/5 rounded-bl-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none" />
             <div className="flex items-center gap-3 mb-6">
               <RefreshCw className="h-6 w-6 text-primary shrink-0" />
               <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-foreground">

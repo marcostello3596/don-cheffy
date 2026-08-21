@@ -7,7 +7,7 @@ const NutritionSection = () => {
   const { lang, t } = useLanguage();
 
   return (
-    <section className="py-24 sm:py-32 bg-primary text-primary-foreground">
+    <section className="py-24 sm:py-32 bg-brand-gradient text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

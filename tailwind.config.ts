@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        "brand-gradient": "linear-gradient(120deg, #65CD96 0%, #39BA97 41%, #15AA99 79%, #07A499 100%)",
+      },
       fontFamily: {
         sans: ["Plus Jakarta Sans", "sans-serif"],
         display: ["Plus Jakarta Sans", "sans-serif"],

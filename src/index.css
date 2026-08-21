@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 
-@layer base {
   :root {
     --background: 36 30% 93%;
     --foreground: 0 0% 0%;
@@ -16,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
 
-    --primary: 147 55% 60%;
+    --primary: 164 53% 48%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 96%;
@@ -25,7 +24,7 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 147 55% 60%;
+    --accent: 164 53% 48%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,23 +32,24 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 147 55% 60%;
+    --ring: 164 53% 48%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 210 8% 96%;
     --sidebar-foreground: 0 0% 0%;
-    --sidebar-primary: 147 55% 60%;
+    --sidebar-primary: 164 53% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 6% 88%;
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 210 8% 85%;
-    --sidebar-ring: 147 55% 60%;
+    --sidebar-ring: 164 53% 48%;
 
     --hero-gradient: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 97%) 100%);
+    --brand-gradient: linear-gradient(120deg, #65CD96 0%, #39BA97 41%, #15AA99 79%, #07A499 100%);
     --forest: 0 0% 0%;
-    --forest-light: 147 55% 60%;
-    --warm-orange: 147 55% 50%;
+    --forest-light: 164 53% 48%;
+    --warm-orange: 164 53% 48%;
     --cream-dark: 0 0% 96%;
   }
 
@@ -63,8 +63,8 @@
     --popover: 0 0% 5%;
     --popover-foreground: 210 10% 93%;
 
-    --primary: 147 55% 55%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 164 53% 48%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 12%;
     --secondary-foreground: 210 10% 93%;
@@ -72,26 +72,25 @@
     --muted: 0 0% 15%;
     --muted-foreground: 210 5% 55%;
 
-    --accent: 147 55% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 164 53% 48%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 147 55% 55%;
+    --ring: 164 53% 48%;
 
     --sidebar-background: 0 0% 7%;
     --sidebar-foreground: 210 10% 93%;
-    --sidebar-primary: 147 55% 55%;
-    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-primary: 164 53% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 210 10% 93%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 147 55% 55%;
+    --sidebar-ring: 164 53% 48%;
   }
-}
 
 @layer base {
   * {
@@ -106,5 +105,16 @@
   h1, h2, h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .bg-brand-gradient {
+    background-image: linear-gradient(120deg, #65CD96 0%, #39BA97 41%, #15AA99 79%, #07A499 100%);
+  }
+  .text-brand-gradient {
+    background: linear-gradient(120deg, #65CD96 0%, #39BA97 41%, #15AA99 79%, #07A499 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
