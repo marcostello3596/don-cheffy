@@ -6,7 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const icons = [Instagram, Link2, Sparkles];
 
 const recipeVideos: string[] = [
-  "/videos/recilist-instagram-recipe.mp4",
+  "/videos/Desde IG.mp4",
   "/videos/recilist-url-recipe.mp4",
   "/videos/recilist-ai-recipe.mp4",
 ];
