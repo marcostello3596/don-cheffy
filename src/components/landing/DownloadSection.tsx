@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
-import { Apple, Smartphone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import appStoreBadge from "@/assets/app-store-badge.png";
+import googlePlayBadge from "@/assets/google-play-badge.png";
+
+// Links directos a las tiendas (actualizar con URLs definitivas cuando estén publicadas)
+const IOS_APP_URL = "https://apps.apple.com";
+const ANDROID_APP_URL = "https://play.google.com";
 
 const DownloadSection = () => {
   const { lang, t } = useLanguage();
@@ -27,40 +32,34 @@ const DownloadSection = () => {
             {t.download.subtitle[lang]}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
-            {/* App Store QR */}
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-background rounded-2xl p-4 shadow-lg border border-border">
-                <div className="w-40 h-40 bg-muted rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <Apple className="h-8 w-8 mx-auto mb-2 text-foreground" />
-                    <span className="text-xs text-muted-foreground">QR place</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <Apple className="h-5 w-5 text-foreground" />
-                <span className="font-semibold text-foreground">{t.download.appStore[lang]}</span>
-              </div>
-              <span className="text-xs text-muted-foreground">{t.download.scanLabel[lang]}</span>
-            </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-8">
+            <a
+              href={IOS_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-2xl shadow-md hover:shadow-lg"
+              aria-label={t.download.appStore[lang]}
+            >
+              <img
+                src={appStoreBadge}
+                alt="Download on the App Store"
+                className="h-14 sm:h-16 w-auto object-contain rounded-2xl"
+              />
+            </a>
 
-            {/* Play Store QR */}
-            <div className="flex flex-col items-center gap-4">
-              <div className="bg-background rounded-2xl p-4 shadow-lg border border-border">
-                <div className="w-40 h-40 bg-muted rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <Smartphone className="h-8 w-8 mx-auto mb-2 text-foreground" />
-                    <span className="text-xs text-muted-foreground">QR</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <Smartphone className="h-5 w-5 text-foreground" />
-                <span className="font-semibold text-foreground">{t.download.playStore[lang]}</span>
-              </div>
-              <span className="text-xs text-muted-foreground">{t.download.scanLabel[lang]}</span>
-            </div>
+            <a
+              href={ANDROID_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-2xl shadow-md hover:shadow-lg"
+              aria-label={t.download.playStore[lang]}
+            >
+              <img
+                src={googlePlayBadge}
+                alt="Get it on Google Play"
+                className="h-14 sm:h-16 w-auto object-contain rounded-2xl"
+              />
+            </a>
           </div>
         </motion.div>
       </div>

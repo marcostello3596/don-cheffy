@@ -140,10 +140,12 @@ const translations = {
   },
   download: {
     title: { en: "Download ReciList now", es: "Descarga ReciList ahora" },
-    subtitle: { en: "Scan the QR code with your phone to get the app.", es: "Escaneá el código QR con tu teléfono para obtener la app." },
+    subtitle: {
+      en: "Available for iOS and Android. Download the app today.",
+      es: "Disponible para iOS y Android. Descargá la app hoy.",
+    },
     appStore: { en: "App Store", es: "App Store" },
     playStore: { en: "Google Play", es: "Google Play" },
-    scanLabel: { en: "Scan to download", es: "Escaneá para descargar" },
   },
   support: {
     title: { en: "Customer Support", es: "Soporte al Cliente" },
@@ -159,7 +161,10 @@ const translations = {
     faq2Q: { en: "Is my shopping list updated automatically?", es: "¿Mi lista de compras se actualiza sola?" },
     faq2A: { en: "Yes! When you add recipes or change the number of servings, all ingredients are aggregated and organized by category automatically.", es: "¡Sí! Al agregar recetas o cambiar la cantidad de porciones, todos los ingredientes se unifican y organizan por categoría automáticamente." },
     faq3Q: { en: "Where can I download the app?", es: "¿Desde dónde puedo descargar la app?" },
-    faq3A: { en: "You can download ReciList for iOS from the App Store and for Android from Google Play. Scan the QR codes in the download section.", es: "Podés descargar ReciList para iOS desde la App Store y para Android desde Google Play. Escaneá los códigos QR en la sección de descarga." }
+    faq3A: {
+      en: "You can download ReciList for iOS from the App Store and for Android from Google Play using the store buttons in the download section.",
+      es: "Podés descargar ReciList para iOS desde la App Store y para Android desde Google Play a través de los enlaces en la sección de descarga.",
+    }
   },
   footer: {
     rights: { en: "All rights reserved.", es: "Todos los derechos reservados." },
