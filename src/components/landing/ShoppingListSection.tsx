@@ -50,7 +50,7 @@ const ShoppingListSection = () => {
             <video
               ref={videoRef}
               className="h-[60vh] max-h-[640px] min-h-[420px] w-auto max-w-full object-contain"
-              src="/videos/recilist-shopping-list.mp4"
+              src="/videos/shoppingList.mp4"
               autoPlay
               muted
               loop

@@ -80,7 +80,7 @@ const ScrollHero = () => {
 
           <video
             className="block h-auto max-h-[72vh] max-w-[82vw] object-contain relative z-10 mx-auto"
-            src="/videos/recilist-phone-white-bg.mp4"
+            src="/videos/HeroSection.mp4"
             autoPlay
             muted
             loop

@@ -7,8 +7,8 @@ const icons = [Instagram, Link2, Sparkles];
 
 const recipeVideos: string[] = [
   "/videos/Desde IG.mp4",
-  "/videos/recilist-url-recipe.mp4",
-  "/videos/recilist-ai-recipe.mp4",
+  "/videos/URLimport.mp4",
+  "/videos/AIrecipe.mp4",
 ];
 
 const AiRecipesSection = () => {
